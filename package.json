@@ -8,7 +8,8 @@
     "sass": "npx sass-compile",
     "sass-watch": "npx nodemon",
     "start": "npm run sass-watch & npm run eleventy-watch",
-    "prod": "cms-sync *** && npm run start"
+    "prod": "cms-sync schaliegasvrij && npm run start",
+    "dev": "serverless_mongo_URL=mongodb://localhost:3001/meteor npm run prod"
   },
   "keywords": [],
   "author": "",

@@ -1,7 +1,7 @@
 ---
 layout: layout/home
 pagination:
-  data: index
+  data: indexs
   size: 1
   alias: page
 permalink: /index.html

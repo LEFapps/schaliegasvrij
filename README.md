@@ -68,7 +68,6 @@ Pages use the default layout, and need the following elements:
   {
     "file": "index",
     "category": "over-ons",
-    "categoryName": "Over ons",
     "menuTitle": "Over Ons",
     "content": [
       {
@@ -92,3 +91,4 @@ Content is a selection of paragraphs accompanied by an optional image. If no ima
 
 ```json
 ```
+
