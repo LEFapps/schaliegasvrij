@@ -1,9 +1,12 @@
 {% for item in page.content %}
 <div class="row paragraph">
-  {% if item.textFirst == true%}<div class="text {% if item.image%}col-sm-6{% endif %} col-xs-12">{{ item.text | md}}
-  </div>{% endif %}
-  {% if item.image%}<div class="image col-sm-6"><img src={{ item.image }} alt={{ item.imgAlt }} /></div>{% endif %}
-  {% if item.textFirst == false%}<div class="text {% if item.image%}col-sm-6{% endif %} col-xs-12">{{ item.text | md}}
-  </div>{% endif %}
+  {% if item.text %}{% if item.textFirst %}<div class="text {% if item.image%}col-sm-6{% endif %} col-xs-12">
+    {{ item.text | md}}
+  </div>{% endif %}{%endif%}
+  {% if item.image%}<div class="image {% if item.text%}col-sm-6{%else%}banner col-md-12{% endif %} col-xs-12"><a
+      href={{item.image}} target="_blank"><img src={{ item.image }} alt={{ item.imgAlt }} /></a></div>{% endif %}
+  {% if item.text %}{% if item.textFirst != true %}<div class="text {% if item.image%}col-sm-6{% endif %} col-xs-12">
+    {{ item.text | md}}
+  </div>{% endif %}{%endif%}
 </div>
 {% endfor %}

@@ -7036,6 +7036,11 @@ section img {
   padding-top: 3rem;
   max-width: 28rem; }
 
+section .banner {
+  min-width: 100%; }
+  section .banner img {
+    min-width: 100%; }
+
 .homeFooter, .footer {
   margin-bottom: -3rem;
   margin-top: -1rem;

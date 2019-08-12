@@ -16,5 +16,10 @@ section{
     padding-top: 3rem;
     max-width: 28rem;
   }
-
+  .banner {
+    min-width: 100%;
+    img {
+      min-width: 100%;
+    }
+  }
 }
