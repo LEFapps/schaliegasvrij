@@ -1,0 +1,17 @@
+// Import your sass files here so they can be compiled
+
+@import '../node_modules/bootstrap/scss/bootstrap';
+
+@import './fonts';
+
+@import './sections/content';
+@import './sections/footer', './sections/gallery', './sections/navigation', './sections/home-main';
+
+html, body {
+  font-size: 1.09rem;
+  height: 100%;
+}
+
+main, section, #content {
+  min-height: 90%;
+}

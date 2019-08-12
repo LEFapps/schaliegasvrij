@@ -1,0 +1,52 @@
+<div class="pos-f-t">
+  <nav class="navbar navbar-dark home-nav">
+    <div class="container">
+      <div id="logo"><a href="/"><img alt='logo'
+            src="{% if site.logo %}{{site.logo}}{% else %}https://serverles-cms.s3-eu-west-1.amazonaws.com/imageUpload/20190709-135036-schaliegasvrij-logo-png.png{% endif %}" /></a>
+      </div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent"
+        aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </nav>
+  <div class="nav-container">
+    <div class="container">
+      <div class="collapse column" id="navbarToggleExternalContent">
+        <ul class="navbar-nav row">
+          <li class="nav-item">
+            <a class="nav-link" href="/">
+              Home
+            </a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Het Verhaal
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              {% for item in pages%}
+              {% if item.category == "het-verhaal" %}
+              <a class="dropdown-item" href={{ item.url }}>{{item.menuTitle}}</a>
+              {% endif %}
+              {% endfor %}
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Over Ons
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              {% for item in pages%}
+              {% if item.category == "over-ons" %}
+              <a class="dropdown-item" href={{ item.url }}>{{item.menuTitle}}</a>
+              {% endif %}
+              {% endfor %}
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

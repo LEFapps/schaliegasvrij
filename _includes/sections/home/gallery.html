@@ -1,0 +1,23 @@
+<div class='gallery col-md-12'>
+  <div class='row topRow'>
+    {% for image in page.topImages %}
+    <a href={{ image.url }} data-toggle='lightbox' data-gallery='gallery' class='col-md-4' target="_blank">
+      <img alt={{ image.title }} src={{ image.url }} class='img-fluid' />
+    </a>
+    {% endfor %}
+  </div>
+  <div class='row middleRow'>
+    {% for image in page.middleImages %}
+    <a href={{ image.url }} data-toggle='lightbox' data-gallery='gallery' class='col-md-4' target="_blank">
+      <img alt={{ image.title }} src={{ image.url }} class='img-fluid' />
+    </a>
+    {% endfor %}
+  </div>
+  <div class='row bottomRow'>
+    {% for image in page.bottomImages %}
+    <a href={{ image.url }} data-toggle='lightbox' data-gallery='gallery' class='col-md-4' target="_blank">
+      <img alt={{ image.title }} src={{ image.url }} class='img-fluid' />
+    </a>
+    {% endfor %}
+  </div>
+</div>

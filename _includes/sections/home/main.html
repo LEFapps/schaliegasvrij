@@ -1,0 +1,16 @@
+<div id="content">
+  <div class="home-intro">
+    {{ page.content | md }}
+  </div>
+  <div class="home-index">
+    <ul>
+      {% for item in pages %}
+      {% if item.category == 'het-verhaal' %}
+      {% if item.file != 'index' %}
+      <li><a href={{ item.url }}>{{ item.menuTitle }}</a></li>
+      {% endif %}
+      {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+</div>

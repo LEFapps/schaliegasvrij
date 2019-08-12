@@ -1,0 +1,71 @@
+// Default layout
+.navTitle {
+  margin-left: -8rem;
+  margin-right: 10rem;
+  margin-top: -0.5rem;
+  max-width: 3rem !important;  
+}
+
+.mainNav {
+  height: 8rem;
+  padding-top: 2rem;
+
+  .nav-link {
+    font-family: "Rubik Mono One", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 1.6px;
+    line-height: 1.16;
+  }
+
+  .active::before {
+    content: "|";
+    color: rgba(205, 25, 6, 1);
+  }
+}
+
+.dropdown-item.active, .dropdown-item:active {
+  background-color: white !important;
+  color: black;
+}
+
+// Home layout
+.home-nav {
+  min-height: 10em;
+  background: rgba(205, 25, 6, 1);
+}
+
+#logo img {
+  max-height: 120px;
+}
+
+.navbar-toggler {
+  border-color: white !important;
+}
+
+.navbar-nav {
+  flex-direction: row;
+}
+
+.nav-container, .home-nav {
+  margin-top: -2px;
+  border-bottom: 2px solid rgba(205, 25, 6, 1);
+}
+
+.nav-link {
+  color: black !important;
+  padding-left: 5rem !important;
+  padding-right: 3rem !important;
+}
+
+// Queries
+
+@media screen and (max-width: 1200px) {
+  .mainNav {
+    margin-left: 5rem !important;
+  }
+  .nav-link {
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+  }
+}

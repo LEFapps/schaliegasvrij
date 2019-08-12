@@ -1,0 +1,10 @@
+<div class="homeFooter">
+  <h1 class="footerTitle">{{ site.footerTitle }}</h1>
+  <p class="footerContent">{{ site.footerContent }}</p>
+
+  {% for link in site.footerLinks%}
+  {% if link.type == 'facebook' %}
+  <a href={{ link.url }} target="_blank" class="fa fa-facebook"></a>
+  {% endif %}
+  {% endfor %}
+</div>

@@ -1,0 +1,36 @@
+.homeFooter, .footer {
+  margin-bottom: -3rem;
+  margin-top: -1rem;
+  
+  text-align: center;
+  
+  background-color: black;
+  color: white;
+
+  .footerTitle {
+    font-family: "Rubik Mono One", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: 1.6px;
+    line-height: 1.16;
+    text-transform: uppercase;
+  }
+
+  .fa-facebook {
+    font-size: 1.4rem;
+    color: white !important;
+    padding: 0.65rem 1rem;
+    border-radius: 25px;
+    border: 2px solid white;
+  }
+}
+
+.homeFooter {
+  min-height: 16rem;
+  padding-top: 5rem;
+}
+
+.footer {
+  height: 5rem;
+  padding-top: 2rem;
+}
