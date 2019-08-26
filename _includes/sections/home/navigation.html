@@ -14,37 +14,7 @@
     <div class="container">
       <div class="collapse column" id="navbarToggleExternalContent">
         <ul class="navbar-nav row">
-          <li class="nav-item">
-            <a class="nav-link" href="/">
-              Home
-            </a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              Het Verhaal
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              {% for item in pages%}
-              {% if item.category == "het-verhaal" %}
-              <a class="dropdown-item" href={{ item.url }}>{{item.menuTitle}}</a>
-              {% endif %}
-              {% endfor %}
-            </div>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              Over Ons
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              {% for item in pages%}
-              {% if item.category == "over-ons" %}
-              <a class="dropdown-item" href={{ item.url }}>{{item.menuTitle}}</a>
-              {% endif %}
-              {% endfor %}
-            </div>
-          </li>
+          {% include sections/navbar.html %}
         </ul>
       </div>
     </div>
