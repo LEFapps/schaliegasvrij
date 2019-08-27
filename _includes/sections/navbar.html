@@ -1,0 +1,25 @@
+<li class="nav-item">
+  <a class="nav-link" href="/">
+    Home
+  </a>
+</li>
+{% assign sections = "Het Verhaal:het-verhaal,Actie:actie,Over ons:over-ons" | split: "," %}
+{% for section in sections %}
+{% assign s = section | split: ":" %}
+{% assign label = s[0] %}
+{% assign sec = s[1] %}
+<li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle" href="#"
+    id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    {{ label }}
+  </a>
+  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+    {% for item in pages%}
+    {% if item.category == sec %}
+    <a class="dropdown-item {% if page.file == item.file %}{% if page.category == item.category %}active{% endif %}{% endif %}"
+      href={{ item.url }}>{{item.menuTitle}}</a>
+    {% endif %}
+    {% endfor %}
+  </div>
+</li>
+{% endfor %}
