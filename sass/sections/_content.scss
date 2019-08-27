@@ -22,4 +22,11 @@ section{
       min-width: 100%;
     }
   }
+  blockquote {
+    width: 100%;
+    padding: 0.6rem 0 0 1.3rem;
+    border: solid 2px #b7b7b7;
+    box-shadow: 5px 5px 0 0 #b7b7b7;
+    font-style: italic;
+  }
 }
