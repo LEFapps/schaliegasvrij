@@ -4,15 +4,10 @@
       <div id="logo"><a href="/"><img alt='logo'
             src="{% if site.logo %}{{site.logo}}{% else %}https://serverles-cms.s3-eu-west-1.amazonaws.com/imageUpload/20190709-135036-schaliegasvrij-logo-png.png{% endif %}" /></a>
       </div>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent"
-        aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    </div>
   </nav>
-  <div class="nav-container">
+  <div class="nav-container home-nav-container">
     <div class="container">
-      <div class="collapse column" id="navbarToggleExternalContent">
+      <div class="column" id="navbarToggleExternalContent">
         <ul class="navbar-nav row">
           {% include sections/navbar.html %}
         </ul>

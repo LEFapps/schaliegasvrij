@@ -1,8 +1,16 @@
 <div class="pos-f-t">
-  <div class="column container">
-    <ul class="navbar-nav row mainNav">
-      <li class="nav-item"><a class="nav-link navTitle" href="/" id="home">Antwerpen Schaliegasvrij</a></li>
-        {% include sections/navbar.html %}
-    </ul>
+  <div class="nav-container home-nav-container">
+    <div class="container">
+      <ul class="nav-banner col-12">
+        <li class="nav-item">
+          <a href="/" class="nav-link">Antwerpen Schaliegasvrij</a>
+        </li>
+      </ul>
+      <div class="column" id="navbarToggleExternalContent">
+        <ul class="navbar-nav row">
+          {% include sections/navbar.html %}
+        </ul>
+      </div>
+    </div>
   </div>
 </div>

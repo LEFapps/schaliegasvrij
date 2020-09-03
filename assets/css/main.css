@@ -7088,15 +7088,14 @@ section blockquote {
   margin-top: -0.5rem;
   max-width: 4.5rem !important; }
 
+.nav-banner {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none; }
+
 .mainNav {
   height: 8rem;
   padding-top: 2rem; }
-  .mainNav .nav-link {
-    font-family: "Rubik Mono One", sans-serif;
-    font-size: 1rem;
-    font-weight: 400;
-    letter-spacing: 1.6px;
-    line-height: 1.16; }
   .mainNav .active::before {
     content: "|";
     color: #cd1906; }
@@ -7123,6 +7122,11 @@ section blockquote {
   border-bottom: 2px solid #cd1906; }
 
 .nav-link {
+  font-family: "Rubik Mono One", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 1.6px;
+  line-height: 1.16;
   color: black !important;
   padding-left: 1rem !important;
   padding-right: 1rem !important; }
